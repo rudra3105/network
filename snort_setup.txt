@@ -1,0 +1,12 @@
+1. Download and install Snort:
+   - Visit: https://www.snort.org/downloads
+   - Follow the installation instructions for your operating system.
+
+2. Configure Snort:
+   - Edit the `snort.conf` file to set the HOME_NET and other variables.
+
+3. Run Snort to capture packets:
+   snort -i eth0 -c /path/to/snort.conf -l /path/to/logs
+
+4. Convert the Snort logs to PCAP:
+   snort -r /path/to/snort_logs -w /path/to/output.pcap
